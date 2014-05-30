@@ -26,7 +26,7 @@
 	<!-- Enables the Spring MVC @Controller programming model -->
 	<mvc:annotation-driven />
 	<tx:annotation-driven/>
-	<context:component-scan base-package="com.endava.federatedsearch, com.endava.federatedsearch.jpa" />
+	<context:component-scan base-package="com.endava.federatedsearch , com.endava.federatedsearch.jpa" />
 	<context:property-placeholder location="classpath:config.properties"/>
 	
 
@@ -41,7 +41,6 @@
 	
 	<bean id="restTemplate" class="org.springframework.web.client.RestTemplate" />
 	<bean id="MergeResultDataMainService" class="com.endava.federatedsearch.jpa.service.impl.MergeResultDataMainService" />
-
 	
 	<bean id="transactionManager" class="org.springframework.orm.jpa.JpaTransactionManager">
     	<property name="entityManagerFactory" ref="entityManagerFactory" />
@@ -55,7 +54,7 @@
                 <property name="generateDdl" value="false"/>
             </bean>
         </property>
-        <property name="packagesToScan" value="com.endava.federatedsearch.jpa.models" />
+        <property name="packagesToScan" value="com.endava.federatedsearch.jpa.models"  />
     </bean>
 
     <bean id="databaseDS" class="org.springframework.jdbc.datasource.DriverManagerDataSource">

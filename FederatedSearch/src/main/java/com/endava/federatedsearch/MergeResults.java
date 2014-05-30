@@ -20,12 +20,12 @@ public class MergeResults {
 		mergeResult.setCountry(content.getCountry());
 		mergeResult.setGenre(poolingServerData.getGenre());
 		mergeResult.setImdb_id(content.getImdb_id());
-		mergeResult.setImdbRating(poolingServerData.getImdbRating());
+		mergeResult.setImdb_rating(poolingServerData.getImdbRating());
 		mergeResult.setOverview(content.getOverview());
 		mergeResult.setPoster(content.getPoster());
 		mergeResult.setTitle(content.getTitle());
 		mergeResult.setUrl(content.getUrl());
-		mergeResult.setYear(content.getYear());
+		mergeResult.setYears(String.valueOf(content.getYear()));
 	}
 	
 	public List<MergeResultData> removeDuplicates(List<MergeResultData> resultDataList) {

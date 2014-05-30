@@ -11,9 +11,9 @@
 <h1 style="text-align: center;">Results about ${searchTerm}</h1>
   <c:forEach items="${mergeResultList}" var="item">
     <h3>
-    		<a href="${item.poster}" target="_self">
+    		<a href="${item.poster}" target="_blank">
 			<img src="${item.poster}" style="margin-right: 10px; float: left; width: 270px; height: 400px;" /></a>
-			<span style="color:#008000;"><span style="font-family:verdana,geneva,sans-serif;"><a href="${item.url}" target="_self">${item.title}</a></span></span>
+			<span style="color:#008000;"><span style="font-family:verdana,geneva,sans-serif;"><a href="${item.url}" target="_blank">${item.title}</a></span></span>
 	</h3>
 		<div style="margin-left: 120px;">
 			<span style="font-family: georgia, serif; font-size: 16px;"><strong>Genre</strong>: <span style="font-size:14px;">${item.genre}</span></span>

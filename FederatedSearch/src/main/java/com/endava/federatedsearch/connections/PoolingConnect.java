@@ -1,10 +1,9 @@
 package com.endava.federatedsearch.connections;
 
 import java.io.IOException;
-import java.io.UnsupportedEncodingException;
 import java.util.Arrays;
 import java.util.List;
-import java.util.Vector;
+
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -14,7 +13,6 @@ import org.springframework.web.client.RestTemplate;
 
 import com.endava.federatedsearch.models.Message;
 import com.endava.federatedsearch.models.PoolingServerData;
-import com.endava.federatedsearch.models.SynchronousServerData;
 import com.fasterxml.jackson.core.JsonParseException;
 import com.fasterxml.jackson.databind.JsonMappingException;
 import com.fasterxml.jackson.databind.ObjectMapper;

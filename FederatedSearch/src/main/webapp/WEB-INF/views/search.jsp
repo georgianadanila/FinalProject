@@ -36,7 +36,7 @@
 		<p style="text-align: center;">
 			&nbsp;</p>
 			
-		<form action="results" method="post" target="_new">
+		<form action="results" method="post" target="_blank">
 		<div class="container">
 		<input type="text" name="searchTerm"></div>
 		<div class="button">
